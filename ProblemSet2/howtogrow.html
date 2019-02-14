@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>养棵植物吧</title>
+
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+   <link rel="stylesheet" type="text/css"  href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <link href="static/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/font-awesome.min.css">
+  <link href="static/css/animate.min.css" rel="stylesheet">
+  <link href="static/css/prettyPhoto.css" rel="stylesheet">
+  <link href="static/css/style.css" rel="stylesheet">
+  <link href="static/css/responsive.css" rel="stylesheet">
+
+  <script src="static/js/bootstrap.min.js"></script>
+  <script src="static/js/jquery.prettyPhoto.js"></script>
+  <script src="static/js/jquery.isotope.min.js"></script>
+  <script src="static/js/wow.min.js"></script>
+  <script src="static/js/main.js"></script>
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+<style>
+  .return-top{
+      width:50px;
+      height:50px;
+      font:bold 20px/50px "宋体";
+      color:#fff;
+      background-color:#6D8188;
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      text-align:center;
+      cursor:pointer;
+      display:none;
+  }
+  .return-top.active{
+      display:block;
+  }
+</style>
+
+</head>
+
+<body class="homepage">
+  <header id="header">
+    <nav class="navbar navbar-fixed-top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">导航栏</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+          <a class="navbar-brand" href="Index.html">LovePlants</a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">养棵植物</a></li>
+            <li class="active"><a href="howtogrow.html">常见品种</a></li>
+            <li><a href="howtoput.html">布置技巧</a></li>
+            <li><a href="wheretobuy.html">去哪里买</a></li>
+              <li><a href="blog.html">特别专题</a></li>
+            <li><a href="contactme.html">给我留言</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--/.container-->
+    </nav>
+    <!--/nav-->
+
+  </header>
+  <!--/header-->
+
+  <section id="about-us">
+    <div class="container">
+      <div class="skill-wrap clearfix">
+        <div class="center wow fadeInDown">
+          <h2>常见室内植物介绍</span></h2>
+          <p class="lead">在这里，你可以查阅一些常见室内植物的简介、特性和栽培方法。 <br>
+            如果并不确定什么植物适合你，就来看看<a href="howtobuy.html" style="color:#b094b3"> “买什么花” </a>吧。 <br>
+              如果你已对常见植物都有所熟识，不如探索一下 <a href="blog.html" style="color:#b094b3">“特别专题”</a> ，希望能给你特别的惊喜。</p>
+        </div>
+
+
+
+        <div id="app">
+
+                    <ul style="list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;">
+                        <li v-for="item in items" style="  width: 370px;
+                          background: #e6e6e6;
+                          border-radius: 15px;
+                          padding: 20px;
+                          margin: 50px;">
+                            <h3  style="text-align: center;color:#6D8188;font-size:22px">{{ item['fields']['Plant_Name'] }}</h3>
+                            <p><strong>植物简介：</strong>{{ item['fields']['Discription'] }}</p>
+                            <img :src="item['fields']['Photo'][0]['thumbnails']['large']['url']" alt=""
+                             v-if="item['fields']['Photo']" width="280"  style="display: block;  margin-left: auto;  margin-right: auto; padding:20px">
+                                <p><strong>植物大小：</strong>{{ item['fields']['Plant_Size_copy'] }}</p>
+                                <p><strong>植物价格：</strong>{{ item['fields']['Plant_Price_copy'] }}</p>
+                                <p><strong>养殖难度：</strong>{{ item['fields']['Difficulty_Copy'] }}</p>
+                                <p><strong>光线要求：</strong>{{ item['fields']['Light_Level_Copy'] }}</p>
+                                <p><strong>是否有毒：</strong>{{ item['fields']['Pet_Friendly_Copy'] }}</p>
+                            <p><strong>植物功能: </strong>{{ item['fields']['Function'] }}</p>
+                            <p><strong>养殖方法: </strong>{{ item['fields']['Breed'] }}</p>
+
+                        </li>
+                    </ul1>
+                </div><!--app-->
+
+                <!-- Include Dependancy Scripts -->
+                        <script type="text/javascript" src="https://unpkg.com/vue"></script>
+                        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
+                <script type="text/javascript">
+                            var app = new Vue({
+                                el: '#app',
+                                data: {
+                                    items: []
+                                },
+                                mounted: function(){
+                                   this.loadItems();
+                                },
+                                methods: {
+                                    loadItems: function(){
+
+                                        // Init variables
+                                        var self = this
+                                        var app_id = "appAgox3WPwODsSrr";
+                                        var app_key = "keyBadmTVmE3SwXQR";
+                                        this.items = []
+                axios.get(
+                                            "https://api.airtable.com/v0/"+app_id+"/Plant?view=Grid%20view",
+                                            {
+                                                headers: { Authorization: "Bearer "+app_key }
+                                            }
+                                        ).then(function(response){
+                                            self.items = response.data.records
+                                        }).catch(function(error){
+                                            console.log(error)
+                                        })
+                                    }
+                                }
+                            })
+                        </script>
+
+
+  </section>
+  <!--/about-us-->
+
+  <div class="return-top" id="return_top">▲</div>
+  <script>
+
+      var return_top = document.getElementById("return_top");
+      var sTop;
+      window.onscroll = function(){
+          //sTop :滚动条距离顶部的距离数值
+          sTop = document.body.scrollTop||document.documentElement.scrollTop;
+          if(sTop>300){
+              return_top.className = "return-top active";
+          }else{
+              return_top.className = "return-top";
+          }
+      }
+
+      return_top.onclick = function(){
+          var termId = setInterval(function(){
+              sTop-=50;
+              if(sTop<=0){
+
+                  clearInterval(termId);
+              }
+              window.scrollTo(0,sTop);
+
+          },1);
+      }
+  </script>
+
+  <section id="bottom">
+    <div class="container wow fadeInDown" data-wow-duration="800ms" data-wow-delay="500ms">
+      <div class="row">
+          <div class="widget">
+            <h3 style="text-align: center;color:#6D8188">网站介绍和申明</h3>
+            <p style="text-align: center;color:#6D8188">非常感谢您光临我的网站，这是我的个人期末作业~本网站意在为想要购买植物的小伙伴提供一些帮助，
+              包括植物的选购<a href="index.html" style="color:#b094b3">（“养棵植物”）</a>和栽培方法<a href="howtogrow.html" style="color:#b094b3">（“花怎么养”）</a>。<br>
+              网站中提到的植物都是较为普遍的品种，一般在花店或者花鸟市场就能买到。所有的数据都是由我自己整理的，或许有错误之处，欢迎指出。<br>
+      想看一些特别的植物小专题，例如多肉植物、最稀有的植物、最形象的植物，可以点击<a href="blog.html" style="color:#b094b3">“特别专题”</a>。了解一些有趣的植物知识。<br>
+              住在上海的朋友也可以点击<a href="wheretobuy.html" style="color:#b094b3">"去哪里买"</a>来查看上海一些较为著名的花鸟市场。网站还在不断编写中，植物的种类也会渐渐扩充，再次感谢大家的支持。
+            </ul>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <div class="top-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="social">
+            <ul class="social-share">
+              <li><a href="#"><i class="fab fa-weixin"></i></a></li>
+              <li><a href="#"><i class="fab fa-weibo"></i></a></li>
+              <li><a href="#"><i class="fas fa-envelope-open"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.container-->
+  </div>
+  <!--/.top-bar-->
+
+  <footer id="footer" class="midnight-blue">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6" style="color:white">
+          &copy; Gp Theme. All Rights Reserved.
+          <div class="credits">
+
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--/#footer-->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+</body>
+
+</html>

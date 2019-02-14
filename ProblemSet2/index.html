@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>养棵植物吧</title>
+
+  <!-- Bootstrap -->
+
+ <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  <link rel="stylesheet" type="text/css"  href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="static/css/animate.min.css" rel="stylesheet">
+  <link href="static/css/prettyPhoto.css" rel="stylesheet">
+  <link href="static/css/style.css" rel="stylesheet">
+  <link href="static/css/responsive.css" rel="stylesheet">
+
+
+  <script src="static/js/bootstrap.min.js"></script>
+  <script src="static/js/jquery.prettyPhoto.js"></script>
+  <script src="static/js/jquery.isotope.min.js"></script>
+  <script src="static/js/wow.min.js"></script>
+  <script src="static/js/main.js"></script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+<style>
+  .return-top{
+      width:50px;
+      height:50px;
+      font:bold 20px/50px "宋体";
+      color:#fff;
+      background-color:#6D8188;
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      text-align:center;
+      cursor:pointer;
+      display:none;
+  }
+  .return-top.active{
+      display:block;
+  }
+</style>
+
+</head>
+
+
+<body class="homepage">
+  <header id="header">
+    <nav class="navbar navbar-fixed-top" role="banner" >
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">导航栏</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+          <a class="navbar-brand" href="index.html">LovePlants</a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">养棵植物</a></li>
+            <li><a href="{{ url_for('howtogrow') }}">常见品种</a></li>
+            <li><a href="howtoput.html">布置技巧</a></li>
+            <li><a href="wheretobuy.html">去哪里买</a></li>
+            <li><a href="blog.html">特别专题</a></li>
+            <li><a href="contactme.html">给我留言</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--/.container-->
+    </nav>
+    <!--/nav-->
+
+  </header>
+  <!--/header-->
+
+  <div class="slider">
+    <div class="container">
+      <div id="about-slider">
+        <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators visible-xs">
+            <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-slider" data-slide-to="1"></li>
+            <li data-target="#carousel-slider" data-slide-to="2"></li>
+          </ol>
+
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="static/img/slide1.jpg" class="img-responsive" alt="">
+            </div>
+            <div class="item">
+              <img src="static/img/slide2.jpg" class="img-responsive" alt="">
+            </div>
+            <div class="item">
+              <img src="static/img/slide3.jpg" class="img-responsive" alt="">
+            </div>
+          </div>
+
+          <a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
+						<i class="fa fa-angle-left"></i>
+					</a>
+
+          <a class=" right carousel-control hidden-xs" href="#carousel-slider" data-slide="next">
+						<i class="fa fa-angle-right"></i>
+					</a>
+        </div>
+        <!--/#carousel-slider-->
+      </div>
+      <!--/#about-slider-->
+    </div>
+  </div>
+
+  <section id="feature">
+    <div class="container">
+      <div class="center wow fadeInDown">
+        <h2>我适合买什么植物？</h2>
+        <p class="lead">不管是在家中还是在办公室，添上一盆绿植，整个场所都会显得生机勃勃。 <br>
+        关于植物，香港人都在说些什么？以下表格数据来自香港讨论区园艺板块，一起来一探究竟吧！</p>
+      </div>
+
+
+          <div class="table-responsive">
+          <table id="example" width="100%"  class="display">
+            <thead>
+                      <tr>
+                        <th>标题</th>
+                        <th>作者</th>
+                        <th>发布日期</th>
+                        <th>浏览量</th>
+                        <th>回复数</th>
+                        <th>链接</th>
+
+                      </tr>
+                    </thead>
+
+                    <tfoot>
+                      <tr>
+                        <th>标题</th>
+                        <th>作者</th>
+                        <th>发布日期</th>
+                        <th>浏览量</th>
+                        <th>回复数</th>
+                        <th>链接</th>
+
+                      </tr>
+                    </tfoot>
+
+          </table>
+
+
+         </div>
+         </center>
+         </div>
+         <script src='static/js/data1.js'></script>
+
+
+  </section>
+  <!--/#feature-->
+
+  <section id="recent-works">
+    <div class="container">
+      <div class="center wow fadeInDown">
+        <h2>推荐品种</h2>
+        <p class="lead">这些植物养殖难度低，对光线的要求不高，是非常适合新手的植物。</br>不妨从它们入手，来打造一个生机勃勃的小花园。</p>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="recent-work-wrap">
+            <img class="img-responsive" src="static/img/diaolan.jpg" alt="">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="howtogrow.html">吊兰</a> </h3>
+                <p>吊兰叶片细长柔软，从叶腋中抽生的甸甸茎长有小植株，由盆沿向下垂，舒展散垂；它既刚且柔，形似展翅跳跃的仙鹤，故古有“折鹤兰”之称。</p>
+               <a  href="howtogrow.html" ><i class="fa fa-eye"></i> View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="recent-work-wrap">
+            <img class="img-responsive" src="static/img/Aloe.jpg" alt="">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="howtogrow.html">芦荟</a></h3>
+                <p>芦荟，原产于地中海、非洲，为独尾草科多年生草本植物。易于栽种，为花叶兼备的观赏植物。</p>
+                  <a  href="howtogrow.html" ><i class="fa fa-eye"></i> View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="recent-work-wrap">
+            <img class="img-responsive" src="static/img/mint.jpeg" alt="">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="howtogrow.html">薄荷 </a></h3>
+                <p>薄荷全株青气芳香。叶对生，花小淡紫色，唇形，花后结暗紫棕色的小粒果。多生于山野湿地河旁。</p>
+              <a  href="howtogrow.html" ><i class="fa fa-eye"></i> View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="recent-work-wrap">
+            <img class="img-responsive" src="static/img/lenshui.jpg" alt="">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="howtogrow.html">冷水花 </a></h3>
+                <p>冷水花适应性强，容易繁殖，比较好养，株丛小巧素雅，叶色绿白分明，纹样美丽，是相当时兴的小型观叶植物。</p>
+                <a  href="howtogrow.html" ><i class="fa fa-eye"></i> View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="recent-work-wrap">
+            <img class="img-responsive" src="static/img/fenxin.jpg" alt="">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="howtogrow.html">风信子</a></h3>
+                <p>风信子植株低矮整齐，花序端庄，花色丰富，花姿美丽，是早春开花的著名球根花卉之一。</p>
+                <a  href="howtogrow.html" ><i class="fa fa-eye"></i> View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="recent-work-wrap">
+            <img class="img-responsive" src="static/img/kongqi.jpg" alt="">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="howtogrow.html">空气凤梨</a></h3>
+                <p>这是地球上唯一完全生于空气中的植物，不用泥土即可生长茂盛，并能绽放出鲜艳的花朵。它们品种繁多，形态各异。</p>
+                  <a  href="howtogrow.html" ><i class="fa fa-eye"></i> View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="recent-work-wrap">
+            <img class="img-responsive" src="static/img/tiexian.jpg" alt="">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="howtogrow.html">铁线蕨 </a></h3>
+                <p>铁线蕨茎叶形态优美，株型小巧，由于黑色的叶柄纤细而有光泽，好似少女柔软的头发，因此又被称为“少女的发丝”</p>
+                <a  href="howtogrow.html" ><i class="fa fa-eye"></i> View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="recent-work-wrap">
+            <img class="img-responsive" src="static/img/wenzhu.jpg" alt="">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="howtogrow.html">文竹 </a></h3>
+                <p>文竹常年翠绿，枝干有节外形似竹，叶片纤细秀丽，密生如羽毛状，翠云层层，株形优雅，独具风韵，故又有云竹之称。</p>
+                <a  href="howtogrow.html" ><i class="fa fa-eye"></i> View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/.row-->
+    </div>
+    <!--/.container-->
+  </section>
+  <!--/#recent-works-->
+
+  <section id="recent-works">
+    <div class="container">
+      <div class="center wow fadeInDown">
+        <h2>迷人的多肉</h2>
+        <p class="lead">多肉植物颜色鲜艳、形态各异、娇小玲珑，总是会在第一眼就夺得人们的目光。<br>
+          它们的名字也非常的富有诗意，静夜、花月夜、冰梅、广寒宫、晚霞……念来就像一首诗一般。<br>
+          想发现更多多肉之美，不如去<a href="blog.html" style="color:#c6b2c8">“特别专题”</a>看看！</p>
+
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="recent-work-wrap">
+            <img class="img-responsive" src="static/img/huayueye.jpg" alt="">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="howtogrow.html">花月夜</a> </h3>
+                <p>叶子勺形，叶尖有红边，日照充足的情况下叶边会变红。 整株植物呈一朵莲花造型。花朵是铃铛形的，花色是黄色。花期春季。</p>
+               <a  href="https://baike.baidu.com/item/%E8%8A%B1%E6%9C%88%E5%A4%9C/4480629"  target="_blank" ><i class="fa fa-eye"></i> View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="recent-work-wrap">
+            <img class="img-responsive" src="static/img/wumu2.jpg" alt="">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="">乌木</a></h3>
+                <p>叶呈莲座状紧密排列，叶面深绿如玉质感，叶缘及叶背上部在阳光充足的环境下展现尤为浓重的深棕色或黑棕色</p>
+                  <a  href="https://baike.baidu.com/item/%E4%B9%8C%E6%9C%A8/17157813"  target="_blank" ><i class="fa fa-eye"></i> View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="recent-work-wrap">
+            <img class="img-responsive" src="static/img/juren.jpg" alt="">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="">墨西哥巨人</a></h3>
+                <p>这种植物由于其特别的白色巨型叶子，而被人叫做墨西哥巨人，是一种大型多肉品种。厚叶子肉肉的，老叶子有时会偏粉。</p>
+              <a  href="https://baike.baidu.com/item/%E5%A2%A8%E8%A5%BF%E5%93%A5%E5%B7%A8%E4%BA%BA"  target="_blank" ><i class="fa fa-eye"></i> View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="recent-work-wrap">
+            <img class="img-responsive" src="static/img/benba.jpg" alt="">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="">苯巴蒂斯</a></h3>
+                <p>莲座形态紧凑周正，叶片厚实，叶片底色为偏白的淡绿色，叶背具一条鲜明的红色短龙骨，与鲜明突出的红色叶尖相连，叶面分布着极细的斑纹。</p>
+                  <a  href="https://baike.baidu.com/item/%E8%8B%AF%E5%B7%B4%E8%92%82%E6%96%AF"  target="_blank" ><i class="fa fa-eye"></i> View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="recent-work-wrap">
+            <img class="img-responsive" src="static/img/binmei2.jpg" alt="">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="">冰莓</a></h3>
+                <p>冰莓属于月影系多肉，在秋天的时候会变成桃红色，叶边有透明感，非常娇嫩可人，日晒下叶片会有果香味。</p>
+              <a  href="https://baike.baidu.com/item/%E7%9F%B3%E8%8E%B2%E8%8A%B1%E5%B1%9E?fromtitle=%E5%86%B0%E8%8E%93&fromid=20228269" target="_blank" ><i class="fa fa-eye"></i> View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="recent-work-wrap">
+            <img class="img-responsive" src="static/img/daibi.jpg" alt="">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="">黛比</a></h3>
+                <p>叶肉质，匙形，表面有薄粉，呈莲座状排列，一般呈淡紫色，在阳光充足且具一定温差的环境下叶片呈粉紫色。</p>
+                  <a  href="https://baike.baidu.com/item/%E9%BB%9B%E6%AF%94/16913244#viewPageContent"  target="_blank" ><i class="fa fa-eye"></i> View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="recent-work-wrap">
+            <img class="img-responsive" src="static/img/ziluolan2.jpg" alt="">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="">紫罗兰女王 </a></h3>
+                <p>叶片呈莲座形密集排列，在强光下会变成梦幻的紫粉色，且叶缘有透明的冰边。</p>
+                <a  href="https://baike.baidu.com/item/%E7%B4%AB%E7%BD%97%E5%85%B0%E5%A5%B3%E7%8E%8B"  target="_blank" ><i class="fa fa-eye"></i> View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="recent-work-wrap">
+            <img class="img-responsive" src="static/img/lanshilian4.jpg" alt="">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="">蓝石莲</a></h3>
+                <p>莲座中小型，直径10-15厘米，灰绿色的叶片被有一层淡蓝色的霜粉，在阳光充足且具一定温差的环境下会变成粉红色。</p>
+                <a  href="https://baike.baidu.com/item/%E7%9A%AE%E6%B0%8F%E7%9F%B3%E8%8E%B2?fromtitle=%E8%93%9D%E7%9F%B3%E8%8E%B2&fromid=6617821"  target="_blank" ><i class="fa fa-eye"></i> View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/.row-->
+    </div>
+    <!--/.container-->
+  </section>
+
+
+  <div class="return-top" id="return_top">▲</div>
+
+  <script>
+
+      var return_top = document.getElementById("return_top");
+      var sTop;
+      window.onscroll = function(){
+          //sTop :滚动条距离顶部的距离数值
+          sTop = document.body.scrollTop||document.documentElement.scrollTop;
+          if(sTop>300){
+              return_top.className = "return-top active";
+          }else{
+              return_top.className = "return-top";
+          }
+      }
+
+      return_top.onclick = function(){
+          var termId = setInterval(function(){
+              sTop-=50;
+              if(sTop<=0){
+
+                  clearInterval(termId);
+              }
+              window.scrollTo(0,sTop);
+
+          },1);
+      }
+  </script>
+
+  <section id="bottom">
+    <div class="container wow fadeInDown" data-wow-duration="800ms" data-wow-delay="500ms">
+      <div class="row">
+          <div class="widget">
+            <h3 style="text-align: center;color:#6D8188">网站介绍和申明</h3>
+            <p style="text-align: center;color:#6D8188">非常感谢您光临我的网站，这是我的个人期末作业~本网站意在为想要购买植物的小伙伴提供一些帮助，
+              包括植物的选购<a href="index.html" style="color:#b094b3">（“养棵植物”）</a>和栽培方法<a href="howtogrow.html" style="color:#b094b3">（“花怎么养”）</a>。<br>
+              网站中提到的植物都是较为普遍的品种，一般在花店或者花鸟市场就能买到。所有的数据都是由我自己整理的，或许有错误之处，欢迎指出。<br>
+      想看一些特别的植物小专题，例如多肉植物、最稀有的植物、最形象的植物，可以点击<a href="blog.html" style="color:#b094b3">“特别专题”</a>。了解一些有趣的植物知识。<br>
+              网站还在不断编写中，植物的种类也会渐渐扩充，再次感谢大家的支持。
+            </ul>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <div class="top-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="social">
+            <ul class="social-share">
+              <li><a href="#"><i class="fab fa-weixin"></i></a></li>
+              <li><a href="#"><i class="fab fa-weibo"></i></a></li>
+              <li><a href="#"><i class="fas fa-envelope-open"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.container-->
+  </div>
+  <!--/.top-bar-->
+
+  <footer id="footer" class="midnight-blue" >
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6" style="color:white">
+          &copy; Gp Theme. All Rights Reserved.
+          <div class="credits">
+
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!--/#footer-->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+</body>
+
+</html>
