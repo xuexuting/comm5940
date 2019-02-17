@@ -2,23 +2,6 @@
 <html lang="en">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <style>.async-hide { opacity: 0 !important} </style>
-  <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
-  h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
-  (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
-  })(window,document.documentElement,'async-hide','dataLayer',4000,
-  {'GTM-MPW9R36':true});</script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129083106-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-129083106-2',{'optimize_id':'GTM-MPW9R36'});
-</script>
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,12 +15,12 @@
 
 
   <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link href="css/animate.min.css" rel="stylesheet">
-  <link href="css/prettyPhoto.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/responsive.css" rel="stylesheet">
+  <link href="static/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/font-awesome.min.css">
+  <link href="static/css/animate.min.css" rel="stylesheet">
+  <link href="static/css/prettyPhoto.css" rel="stylesheet">
+  <link href="static/css/style.css" rel="stylesheet">
+  <link href="static/css/responsive.css" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
@@ -57,12 +40,11 @@
 
         <div class="collapse navbar-collapse navbar-right">
           <ul class="nav navbar-nav">
-            <li><a href="howtobuy.html">买什么花</a></li>
-            <li><a href="howtogrow.html">花怎么养</a></li>
-            <li class="howtoput"><a href="services.html">花怎么摆</a></li>
-            <li><a href="wheretobuy.html">去哪里买</a></li>
-            <li><a href="blog.html">特别专题</a></li>
-            <li><a href="contactus.html">给我留言</a></li>
+            <li><a href="/">养棵植物</a></li>
+            <li><a href="/table">论坛讨论</a></li>
+            <li class="active"><a href="/howtoput">布置技巧</a></li>
+            <li><a href="/blog">特别专题</a></li>
+            <li><a href="/contactme">给我留言</a></li>
           </ul>
         </div>
       </div>
@@ -106,7 +88,7 @@
         <div class="col-sm-6 col-md-4">
           <div class="media services-wrap wow fadeInDown">
             <div class="pull-left">
-              <img class="img-responsive" src="images/keting.jpg">
+              <img class="img-responsive" src="static/img/keting.jpg">
             </div>
             <div class="media-body">
               <h3 class="media-heading">客厅</h3>
@@ -119,7 +101,7 @@
         <div class="col-sm-6 col-md-4">
           <div class="media services-wrap wow fadeInDown">
             <div class="pull-left">
-              <img class="img-responsive" src="images/woshi.jpg">
+              <img class="img-responsive" src="static/img/woshi.jpg">
             </div>
             <div class="media-body">
               <h3 class="media-heading">卧室</h3>
@@ -132,7 +114,7 @@
         <div class="col-sm-6 col-md-4">
           <div class="media services-wrap wow fadeInDown">
             <div class="pull-left">
-                  <img class="img-responsive" src="images/chufang.png">
+                  <img class="img-responsive" src="static/img/chufang.png">
             </div>
             <div class="media-body">
               <h3 class="media-heading">餐厨</h3>
@@ -145,7 +127,7 @@
         <div class="col-sm-6 col-md-4">
           <div class="media services-wrap wow fadeInDown">
             <div class="pull-left">
-              <img class="img-responsive" src="images/yushi.jpg">
+              <img class="img-responsive" src="static/img/yushi.jpg">
             </div>
             <div class="media-body">
               <h3 class="media-heading">卫生间</h3>
@@ -158,7 +140,7 @@
         <div class="col-sm-6 col-md-4">
           <div class="media services-wrap wow fadeInDown">
             <div class="pull-left">
-              <img class="img-responsive" src="images/yangtai.jpg">
+              <img class="img-responsive" src="static/img/yangtai.jpg">
             </div>
             <div class="media-body">
               <h3 class="media-heading">阳台</h3>
@@ -171,7 +153,7 @@
         <div class="col-sm-6 col-md-4">
           <div class="media services-wrap wow fadeInDown">
             <div class="pull-left">
-              <img class="img-responsive" src="images/bangong.jpg">
+              <img class="img-responsive" src="static/img/bangong.jpg">
             </div>
             <div class="media-body">
               <h3 class="media-heading">办公</h3>
@@ -201,7 +183,7 @@
           <div class="col-xs-12 col-sm-4 col-md-3">
               <h3><a href="howtogrow.html"  style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 幸福树</a> </h3>
             <div class="recent-work-wrap">
-              <img class="img-responsive" src="images/xinfushu.jpg" alt="">
+              <img class="img-responsive" src="static/img/xinfushu.jpg" alt="">
               <div class="overlay">
                 <div class="recent-work-inner">
                   <h3><a href="howtogrow.html">幸福树</a> </h3>
@@ -215,7 +197,7 @@
           <div class="col-xs-12 col-sm-4 col-md-3">
               <h3><a href="howtogrow.html"  style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 龟背竹</a></h3>
             <div class="recent-work-wrap">
-              <img class="img-responsive" src="images/guibeizhu.jpg" alt="">
+              <img class="img-responsive" src="static/img/guibeizhu.jpg" alt="">
               <div class="overlay">
                 <div class="recent-work-inner">
                   <h3><a href="howtogrow.html">龟背竹</a></h3>
@@ -229,7 +211,7 @@
           <div class="col-xs-12 col-sm-4 col-md-3">
             <h3><a href="howtogrow.html"  style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 鹤望兰</a></h3>
             <div class="recent-work-wrap">
-              <img class="img-responsive" src="images/hewanglan.jpg" alt="">
+              <img class="img-responsive" src="static/img/hewanglan.jpg" alt="">
               <div class="overlay">
                 <div class="recent-work-inner">
                   <h3><a href="howtogrow.html">鹤望兰</a></h3>
@@ -243,7 +225,7 @@
           <div class="col-xs-12 col-sm-4 col-md-3">
               <h3><a href="howtogrow.html"  style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 散尾葵</a></h3>
             <div class="recent-work-wrap">
-              <img class="img-responsive" src="images/sanweikui.jpg" alt="">
+              <img class="img-responsive" src="static/img/sanweikui.jpg" alt="">
               <div class="overlay">
                 <div class="recent-work-inner">
                   <h3><a href="howtogrow.html">散尾葵</a></h3>
@@ -271,7 +253,7 @@
             <div class="col-xs-12 col-sm-4 col-md-3">
                 <h3><a href="howtogrow.html"  style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 吊兰</a> </h3>
               <div class="recent-work-wrap">
-                <img class="img-responsive" src="images/diaolan.jpg" alt="">
+                <img class="img-responsive" src="static/img/diaolan.jpg" alt="">
                 <div class="overlay">
                   <div class="recent-work-inner">
                     <h3><a href="howtogrow.html">吊兰</a> </h3>
@@ -285,7 +267,7 @@
             <div class="col-xs-12 col-sm-4 col-md-3">
               <h3><a href="howtogrow.html"  style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 芦荟</a></h3>
               <div class="recent-work-wrap">
-                <img class="img-responsive" src="images/luhui.jpg" alt="">
+                <img class="img-responsive" src="static/img/luhui.jpg" alt="">
                 <div class="overlay">
                   <div class="recent-work-inner">
                     <h3><a href="howtogrow.html">芦荟</a></h3>
@@ -299,7 +281,7 @@
             <div class="col-xs-12 col-sm-4 col-md-3">
                   <h3><a href="howtogrow.html" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 绿萝</a></h3>
               <div class="recent-work-wrap">
-                <img class="img-responsive" src="images/lvluo2.jpg" alt="">
+                <img class="img-responsive" src="static/img/lvluo2.jpg" alt="">
                 <div class="overlay">
                   <div class="recent-work-inner">
                     <h3><a href="howtogrow.html">绿萝</a></h3>
@@ -313,7 +295,7 @@
             <div class="col-xs-12 col-sm-4 col-md-3">
                   <h3><a href="howtogrow.html"  style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 白鹤芋</a></h3>
               <div class="recent-work-wrap">
-                <img class="img-responsive" src="images/baizhang.jpg" alt="">
+                <img class="img-responsive" src="static/img/baizhang.jpg" alt="">
                 <div class="overlay">
                   <div class="recent-work-inner">
                     <h3><a href="howtogrow.html">白鹤芋</a></h3>
@@ -339,7 +321,7 @@
             <div class="col-xs-12 col-sm-4 col-md-3">
                     <h3><a href="howtogrow.html"  style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 冷水花</a> </h3>
               <div class="recent-work-wrap">
-                <img class="img-responsive" src="images/lenshuihua.jpg" alt="">
+                <img class="img-responsive" src="static/img/lenshuihua.jpg" alt="">
                 <div class="overlay">
                   <div class="recent-work-inner">
                     <h3><a href="howtogrow.html">冷水花</a> </h3>
@@ -353,7 +335,7 @@
             <div class="col-xs-12 col-sm-4 col-md-3">
               <h3><a href="howtogrow.html"  style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 空气凤梨</a></h3>
               <div class="recent-work-wrap">
-                <img class="img-responsive" src="images/kongfeng.jpg" alt="">
+                <img class="img-responsive" src="static/img/kongfeng.jpg" alt="">
                 <div class="overlay">
                   <div class="recent-work-inner">
                     <h3><a href="howtogrow.html">空气凤梨</a></h3>
@@ -367,7 +349,7 @@
             <div class="col-xs-12 col-sm-4 col-md-3">
                     <h3><a href="howtogrow.html"  style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 长寿花</a></h3>
               <div class="recent-work-wrap">
-                <img class="img-responsive" src="images/changshouhua.jpg" alt="">
+                <img class="img-responsive" src="static/img/changshouhua.jpg" alt="">
                 <div class="overlay">
                   <div class="recent-work-inner">
                     <h3><a href="howtogrow.html">长寿花</a></h3>
@@ -381,7 +363,7 @@
             <div class="col-xs-12 col-sm-4 col-md-3">
                 <h3><a href="howtogrow.html"  style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 薄荷</a></h3>
               <div class="recent-work-wrap">
-                <img class="img-responsive" src="images/bohe.jpg" alt="">
+                <img class="img-responsive" src="static/img/bohe.jpg" alt="">
                 <div class="overlay">
                   <div class="recent-work-inner">
                     <h3><a href="howtogrow.html">薄荷</a></h3>
@@ -408,7 +390,7 @@
             <div class="col-xs-12 col-sm-4 col-md-3">
                 <h3><a href="howtogrow.html"  style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 虎皮兰</a> </h3>
               <div class="recent-work-wrap">
-                <img class="img-responsive" src="images/hupilan.jpg" alt="">
+                <img class="img-responsive" src="static/img/hupilan.jpg" alt="">
                 <div class="overlay">
                   <div class="recent-work-inner">
                     <h3><a href="howtogrow.html">虎皮兰</a> </h3>
@@ -422,7 +404,7 @@
             <div class="col-xs-12 col-sm-4 col-md-3">
                   <h3><a href="howtogrow.html" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 鸟巢蕨</a></h3>
               <div class="recent-work-wrap">
-                <img class="img-responsive" src="images/niaochao.jpg" alt="">
+                <img class="img-responsive" src="static/img/niaochao.jpg" alt="">
                 <div class="overlay">
                   <div class="recent-work-inner">
                     <h3><a href="howtogrow.html">鸟巢蕨</a></h3>
@@ -436,7 +418,7 @@
             <div class="col-xs-12 col-sm-4 col-md-3">
                 <h3><a href="howtogrow.html" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 孔雀竹芋</a></h3>
               <div class="recent-work-wrap">
-                <img class="img-responsive" src="images/kongque.jpg" alt="">
+                <img class="img-responsive" src="static/img/kongque.jpg" alt="">
                 <div class="overlay">
                   <div class="recent-work-inner">
                     <h3><a href="howtogrow.html">孔雀竹芋</a></h3>
@@ -450,7 +432,7 @@
             <div class="col-xs-12 col-sm-4 col-md-3">
                 <h3><a href="howtogrow.html" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 常春藤</a></h3>
               <div class="recent-work-wrap">
-                <img class="img-responsive" src="images/changchun.jpg" alt="">
+                <img class="img-responsive" src="static/img/changchun.jpg" alt="">
                 <div class="overlay">
                   <div class="recent-work-inner">
                     <h3><a href="howtogrow.html">常春藤</a></h3>
@@ -478,7 +460,7 @@
             <div class="col-xs-12 col-sm-4 col-md-3">
                   <h3><a href="howtogrow.html" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 风信子</a> </h3>
               <div class="recent-work-wrap">
-                <img class="img-responsive" src="images/fenxinzi.jpg" alt="">
+                <img class="img-responsive" src="static/img/fenxinzi.jpg" alt="">
                 <div class="overlay">
                   <div class="recent-work-inner">
                     <h3><a href="howtogrow.html">风信子</a> </h3>
@@ -492,7 +474,7 @@
             <div class="col-xs-12 col-sm-4 col-md-3">
                 <h3><a href="howtogrow.html" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 微型月季</a></h3>
               <div class="recent-work-wrap">
-                <img class="img-responsive" src="images/weiyue.jpg" alt="">
+                <img class="img-responsive" src="static/img/weiyue.jpg" alt="">
                 <div class="overlay">
                   <div class="recent-work-inner">
                     <h3><a href="howtogrow.html">微型月季</a></h3>
@@ -506,7 +488,7 @@
             <div class="col-xs-12 col-sm-4 col-md-3">
                 <h3><a href="howtogrow.html" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 蟹爪兰</a></h3>
               <div class="recent-work-wrap">
-                <img class="img-responsive" src="images/xiezhao.jpg" alt="">
+                <img class="img-responsive" src="static/img/xiezhao.jpg" alt="">
                 <div class="overlay">
                   <div class="recent-work-inner">
                     <h3><a href="howtogrow.html">蟹爪兰</a></h3>
@@ -520,7 +502,7 @@
             <div class="col-xs-12 col-sm-4 col-md-3">
                 <h3><a href="howtogrow.html" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 酢浆草</a></h3>
               <div class="recent-work-wrap">
-                <img class="img-responsive" src="images/cujiang.jpg" alt="">
+                <img class="img-responsive" src="static/img/cujiang.jpg" alt="">
                 <div class="overlay">
                   <div class="recent-work-inner">
                     <h3><a href="howtogrow.html">酢浆草</a></h3>
@@ -547,7 +529,7 @@
               <div class="col-xs-12 col-sm-4 col-md-3">
                   <h3><a href="howtogrow.html" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 文竹</a> </h3>
                 <div class="recent-work-wrap">
-                  <img class="img-responsive" src="images/wenzhu2.jpg" alt="">
+                  <img class="img-responsive" src="static/img/wenzhu2.jpg" alt="">
                   <div class="overlay">
                     <div class="recent-work-inner">
                       <h3><a href="howtogrow.html">文竹</a> </h3>
@@ -561,7 +543,7 @@
               <div class="col-xs-12 col-sm-4 col-md-3">
                   <h3><a href="howtogrow.html" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 君子兰</a></h3>
                 <div class="recent-work-wrap">
-                  <img class="img-responsive" src="images/junzi.jpg" alt="">
+                  <img class="img-responsive" src="static/img/junzi.jpg" alt="">
                   <div class="overlay">
                     <div class="recent-work-inner">
                       <h3><a href="howtogrow.html">君子兰</a></h3>
@@ -575,7 +557,7 @@
               <div class="col-xs-12 col-sm-4 col-md-3">
                     <h3><a href="howtogrow.html" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 铁线蕨</a></h3>
                 <div class="recent-work-wrap">
-                  <img class="img-responsive" src="images/tiexianjue.jpg" alt="">
+                  <img class="img-responsive" src="static/img/tiexianjue.jpg" alt="">
                   <div class="overlay">
                     <div class="recent-work-inner">
                       <h3><a href="howtogrow.html">铁线蕨</a></h3>
@@ -589,7 +571,7 @@
               <div class="col-xs-12 col-sm-4 col-md-3">
                         <h3><a href="howtogrow.html" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 茉莉</a></h3>
                 <div class="recent-work-wrap">
-                  <img class="img-responsive" src="images/moli.jpg" alt="">
+                  <img class="img-responsive" src="static/img/moli.jpg" alt="">
                   <div class="overlay">
                     <div class="recent-work-inner">
                       <h3><a href="howtogrow.html">茉莉</a></h3>
@@ -634,11 +616,11 @@
         <div class="row">
             <div class="widget">
               <h3 style="text-align: center;color:#6D8188">网站介绍和申明</h3>
-              <p style="text-align: center;color:#6D8188">非常感谢您光临我的网站，这是我的个人期末作业~本网站意在为想要购买植物的小伙伴提供一些帮助，
-                包括植物的选购<a href="howtobuy.html" style="color:#b094b3">（“买什么花”）</a>和栽培方法<a href="howtogrow.html" style="color:#b094b3">（“花怎么养”）</a>。<br>
-                网站中提到的植物都是较为普遍的品种，一般在花店或者花鸟市场就能买到。所有的数据都是由我自己整理的，或许有错误之处，欢迎指出。<br>
-      想看一些特别的植物小专题，例如多肉植物、最稀有的植物、最形象的植物，可以点击<a href="blog.html" style="color:#b094b3">“特别专题”</a>。了解一些有趣的植物知识。<br>
-                住在上海的朋友也可以点击<a href="wheretobuy.html" style="color:#b094b3">"去哪里买"</a>来查看上海一些较为著名的花鸟市场。网站还在不断编写中，植物的种类也会渐渐扩充，再次感谢大家的支持。
+                 <p style="text-align: center;color:#6D8188">非常感谢您光临我的网站，这是我的个人期末作业~本网站意在为想要购买植物的小伙伴提供一些帮助，
+              包括植物的选购<a href="/index" style="color:#b094b3">（“养棵植物”）</a>和布置技巧<a href="/howtogrow" style="color:#b094b3"></a>。<br>
+              网站中提到的植物都是较为普遍的品种，一般在花店或者花鸟市场就能买到。所有的数据都是由我自己整理的，或许有错误之处，欢迎指出。<br>
+      想看一些特别的植物小专题，例如多肉植物、最稀有的植物、最形象的植物，可以点击<a href="/blog" style="color:#b094b3">“特别专题”</a>。了解一些有趣的植物知识。<br>
+              网站还在不断编写中，植物的种类也会渐渐扩充，再次感谢大家的支持。</p>
               </ul>
             </div>
           </div>
@@ -683,11 +665,11 @@
   <!--/#footer-->
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.prettyPhoto.js"></script>
-  <script src="js/jquery.isotope.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="static/js/bootstrap.min.js"></script>
+  <script src="static/js/jquery.prettyPhoto.js"></script>
+  <script src="static/js/jquery.isotope.min.js"></script>
+  <script src="static/js/wow.min.js"></script>
+  <script src="static/js/main.js"></script>
 
 </body>
 
