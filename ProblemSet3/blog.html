@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>养棵植物吧</title>
+
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+   <link rel="stylesheet" type="text/css"  href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+  <!-- Bootstrap -->
+  <link href="static/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/font-awesome.min.css">
+  <link href="static/css/animate.min.css" rel="stylesheet">
+  <link href="static/css/prettyPhoto.css" rel="stylesheet">
+  <link href="static/css/style.css" rel="stylesheet">
+  <link href="static/css/responsive.css" rel="stylesheet">
+
+  <style>
+    .return-top{
+        width:50px;
+        height:50px;
+        font:bold 20px/50px "宋体";
+        color:#fff;
+        background-color:#6D8188;
+        position:fixed;
+        bottom:20px;
+        right:20px;
+        text-align:center;
+        cursor:pointer;
+        display:none;
+    }
+    .return-top.active{
+        display:block;
+    }
+  </style>
+
+</head>
+
+<body class="homepage">
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CNSKCV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <header id="header">
+    <nav class="navbar navbar-fixed-top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">导航栏</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+          <a class="navbar-brand" href="/">LovePlants</a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li><a href="/">养棵植物</a></li>
+            <li><a href="/table">论坛讨论</a></li>
+            <li><a href="/howtoput">布置技巧</a></li>
+            <li class="active"><a href="/blog">特别专题</a></li>
+            <li><a href="/contactme">给我留言</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--/.container-->
+    </nav>
+    <!--/nav-->
+
+  </header>
+  <!--/header-->
+
+  <section id="blog" class="container">
+    <div class="center">
+      <h2>特别专题</h2>
+      <p class="lead">这里列出了一些较为特殊的植物种类，或许并不常见，但是知道有这么多神奇的生物存在，也是件非常幸运的事。
+    </div>
+
+    <div class="blog">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="blog-item">
+            <div class="row">
+              <div class="col-sm-2 text-center">
+              </div>
+              <div class="col-sm-11 blog-content">
+                <h2 style="text-align:center;"><a href="" style="color:#6D8188">可爱的多肉植物</a></h2>
+                <h3><i class="fab fa-pagelines" style="color:#9a769d"></i> <a style="color:#9a769d ;"> 多肉植物</a>相信大家并不陌生。
+                  它们颜色鲜艳、形态各异、娇小玲珑，总是会在第一眼就夺得人们的目光。它们的名字也非常的富有诗意，静夜、花月夜、冰梅、广寒宫、晚霞……
+                  念来就像一首诗一般。</br>
+                  作为曾经养殖收集过上百盆多肉植物的我来说，每一棵多肉，只要主人耐心照顾，都会在春秋绽放出无与伦比的美丽。
+                  温差的增大会使得部分多肉的叶片或叶尖变红，植株变的紧凑挺立，生机勃勃，仿佛玉雕般精致。</br>
+                  前几年，多肉植物的价格被炒的异常火热，手指大的一小颗植株，例如象牙或是乌木等贵货，竟能被卖出上百乃至上千的价格。但近几年，随着市场渐渐
+                  冷却，多肉植物的价格也大幅度下跌。因此购买几盆小巧别致的多肉植物照顾，是个非常不多的选择。</br>
+                  以下和右边的多肉植物全都由本人自己种植并拍摄，如想使用，请标明出处，非常感谢~
+
+                </h3>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-4 ">
+                        <h3><a href="" target="_blank" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 多肉拼盘</a> </h3>
+                        <div class="recent-work-wrap">
+                          <img class="img-responsive" src="static/img/duorou2.jpg" alt="">
+                          <div class="overlay">
+                            <div class="recent-work-inner">
+                              <h3><a href="" target="_blank">多肉拼盘</a> </h3>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-4 ">
+                              <h3><a href=""  target="_blank" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 冰莓</h3>
+                        <div class="recent-work-wrap">
+                          <img class="img-responsive" src="static/img/binmei.jpg" alt="">
+                          <div class="overlay">
+                            <div class="recent-work-inner">
+                              <h3><a href=""  target="_blank">冰莓</a></h3>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-4 ">
+                          <h3><a href=""  target="_blank" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 山地玫瑰和大姬星美人</a></h3>
+                        <div class="recent-work-wrap">
+                          <img class="img-responsive" src="static/img/shandi.jpg" alt="">
+                          <div class="overlay">
+                            <div class="recent-work-inner">
+                              <h3><a href=""  target="_blank">山地玫瑰和大姬星美人</a></h3>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                  </div>
+
+
+                 <div style="text-align:center;color:#c6b2c8">
+                  <p><br></p>
+                 <a class="btn btn-primary readmore" href="https://www.drlmeng.com/type/" target="_blank" style="color:#6D8188">
+                 点击查看更多</a>
+                    </div>
+              </div>
+            </div>
+          </div>
+          <!--/.blog-item-->
+
+          <div class="blog-item">
+            <div class="row">
+              <div class="col-sm-2 text-center">
+              </div>
+              <div class="col-sm-11 blog-content">
+                <h2 style="text-align:center;"><a href="blog-item.html" style="color:#6D8188">最稀有的植物</a></h2>
+                <h3><i class="fab fa-pagelines" style="color:#9a769d"></i> <a href="https://baike.baidu.com/item/%E4%BC%8D%E5%BE%B7%E8%8B%8F%E9%93%81" target="_blank" style="color:#9a769d ;">伍德苏铁</a>是世界上最稀有的植物之一，已被列入野外灭绝物种。全球发现的唯一一株野生伍德苏铁位于南非诺耶森林。
+                  这是一种雌雄异株植物，但植物园中所有现存的伍德苏铁都是雄性的，所以伍德苏铁又被评为是世界上最孤独的生物</br>
+                  <i class="fab fa-pagelines" style="color:#9a769d"></i><a href="https://en.wikipedia.org/wiki/Cercocarpus_traskiae"  target="_blank" style="color:#9a769d ;">Cercocarpus traskiae</a>是玫瑰家族中的一种珍稀植物，分布于美国加州卡塔利娜岛等地，是美国本土最稀有的灌木之一，
+                  也是北美最稀有的树木之一，只剩下六种成熟植物。它最明显的特点是叶子像皮革一样，背面有浓密的白色细毛，这也是它跟属内其他物种不一样的地方。</br>
+                  <i class="fab fa-pagelines" style="color:#9a769d"></i><a href="https://baike.baidu.com/item/%E4%BC%8D%E5%BE%B7%E8%8B%8F%E9%93%81" target="_blank" style="color:#9a769d ;">地下兰</a>是个风格怪异而招人喜爱的兰花品种。它一生都在地下生活，甚至在地下开花，因为缺乏叶绿素，它只能通过寄生在根部的真菌来吸取营养，这在植物界里独一无二。
+                  它也是一种极度濒危的植物品种，野外的地下兰只剩下不到50株。
+                </h3>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-4 ">
+                          <h3><a href="https://baike.baidu.com/item/%E4%BC%8D%E5%BE%B7%E8%8B%8F%E9%93%81" target="_blank"style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 伍德苏铁</a> </h3>
+                        <div class="recent-work-wrap">
+                          <img class="img-responsive" src="static/img/wude.jpg" alt="">
+                          <div class="overlay">
+                            <div class="recent-work-inner">
+                              <h3><a href="https://baike.baidu.com/item/%E4%BC%8D%E5%BE%B7%E8%8B%8F%E9%93%81" target="_blank">伍德苏铁</a> </h3>
+                            <a  href="https://baike.baidu.com/item/%E4%BC%8D%E5%BE%B7%E8%8B%8F%E9%93%81" target="_blank" ><i class="fa fa-eye"></i> View</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-4 ">
+                          <h3><a href="https://en.wikipedia.org/wiki/Cercocarpus_traskiae"  target="_blank"style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> Cercocarpus Traskiae</a></h3>
+                        <div class="recent-work-wrap">
+                          <img class="img-responsive" src="static/img/CT.jpg" alt="">
+                          <div class="overlay">
+                            <div class="recent-work-inner">
+                              <h3><a href="https://en.wikipedia.org/wiki/Cercocarpus_traskiae"  target="_blank">Cercocarpus Traskiae</a></h3>
+                                    <a  href="https://en.wikipedia.org/wiki/Cercocarpus_traskiae"  target="_blank" ><i class="fa fa-eye"></i> View</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-4 ">
+                            <h3><a href="https://baike.baidu.com/item/%E5%9C%B0%E4%B8%8B%E5%85%B0/3375218"  target="_blank" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 地下兰</a></h3>
+                        <div class="recent-work-wrap">
+                          <img class="img-responsive" src="static/img/dixia.jpg" alt="">
+                          <div class="overlay">
+                            <div class="recent-work-inner">
+                              <h3><a href="https://baike.baidu.com/item/%E5%9C%B0%E4%B8%8B%E5%85%B0/3375218"  target="_blank">地下兰</a></h3>
+                               <a  href="https://baike.baidu.com/item/%E5%9C%B0%E4%B8%8B%E5%85%B0/3375218"  target="_blank" ><i class="fa fa-eye"></i> View</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                  </div>
+
+
+                 <div style="text-align:center;color:#c6b2c8">
+                  <p><br></p>
+                 <a class="btn btn-primary readmore" href="https://www.zhihu.com/question/30634584" target="_blank" style="color:#6D8188">
+                 点击查看更多</a>
+                    </div>
+              </div>
+            </div>
+          </div>
+          <!--/.blog-item-->
+
+          <div class="blog-item">
+            <div class="row">
+              <div class="col-sm-2 text-center">
+              </div>
+              <div class="col-sm-11 blog-content">
+                <h2 style="text-align:center;"><a href="blog-item.html" style="color:#6D8188">最形象的植物</a></h2>
+                <h3><i class="fab fa-pagelines" style="color:#9a769d"></i> <a href="https://baike.baidu.com/item/%E6%84%8F%E5%A4%A7%E5%88%A9%E7%BA%A2%E9%97%A8%E5%85%B0" target="_blank"  style="color:#9a769d;">意大利红门兰</a>
+                  也称裸男兰、意大利男人兰，花顶生，为发白的粉红色或紫色，整朵花的造型就像一个戴着草帽的裸体男人。
+                  </br>
+                  <i class="fab fa-pagelines" style="color:#9a769d"></i><a  href="https://baike.baidu.com/item/%E5%A4%A9%E9%B9%85%E8%8A%B1"  target="_blank" style="color:#9a769d ;"> 天鹅花</a>
+                  学名为拟两色乌头，盛开在山东牙山高处，花呈乳白色，花冠分四瓣，花蕊朝下，上面一瓣最为怪异，花蕊相扣，
+                  背部细而带钩，形状像一只只展翅欲飞的天鹅，下面的一瓣生出两脚，极像天鹅腿。</br>
+                  <i class="fab fa-pagelines" style="color:#9a769d"></i><a  href="https://baike.baidu.com/item/%E7%8B%AD%E5%8F%B6%E7%99%BD%E8%9D%B6%E5%85%B0?fromtitle=%E9%B9%AD%E8%8D%89&fromid=7308794"  target="_blank" style="color:#9a769d ;"> 狭叶白蝶兰</a>
+                  原产生于日本，台湾和朝鲜地区的河滩和林下。花期一般在夏季，优雅的白色小花有着浓厚的和风气息，
+                  花朵形状类似翩翩飞舞的鹭鸟。
+
+                </h3>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-4 ">
+                          <h3><a href="https://baike.baidu.com/item/%E6%84%8F%E5%A4%A7%E5%88%A9%E7%BA%A2%E9%97%A8%E5%85%B0" target="_blank"style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 意大利红门兰</a> </h3>
+                        <div class="recent-work-wrap">
+                          <img class="img-responsive" src="static/img/luonan.jpg" alt="">
+                          <div class="overlay">
+                            <div class="recent-work-inner">
+                              <h3><a href="https://baike.baidu.com/item/%E6%84%8F%E5%A4%A7%E5%88%A9%E7%BA%A2%E9%97%A8%E5%85%B0" target="_blank">意大利红门兰</a> </h3>
+                            <a  href="https://baike.baidu.com/item/%E6%84%8F%E5%A4%A7%E5%88%A9%E7%BA%A2%E9%97%A8%E5%85%B0" target="_blank" ><i class="fa fa-eye"></i> View</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-4 ">
+                        <h3><a href="https://baike.baidu.com/item/%E5%A4%A9%E9%B9%85%E8%8A%B1"  target="_blank"style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 天鹅花</a></h3>
+                        <div class="recent-work-wrap">
+                          <img class="img-responsive" src="static/img/tiane.jpg" alt="">
+                          <div class="overlay">
+                            <div class="recent-work-inner">
+                              <h3><a href="https://baike.baidu.com/item/%E5%A4%A9%E9%B9%85%E8%8A%B1"  target="_blank">天鹅花</a></h3>
+                                    <a  href="https://baike.baidu.com/item/%E5%A4%A9%E9%B9%85%E8%8A%B1"  target="_blank" ><i class="fa fa-eye"></i> View</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-4 ">
+                          <h3><a href="https://baike.baidu.com/item/%E7%8B%AD%E5%8F%B6%E7%99%BD%E8%9D%B6%E5%85%B0?fromtitle=%E9%B9%AD%E8%8D%89&fromid=7308794"  target="_blank" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 狭叶白蝶兰</a></h3>
+                        <div class="recent-work-wrap">
+                          <img class="img-responsive" src="static/img/lucao.jpg" alt="">
+                          <div class="overlay">
+                            <div class="recent-work-inner">
+                              <h3><a href="https://baike.baidu.com/item/%E7%8B%AD%E5%8F%B6%E7%99%BD%E8%9D%B6%E5%85%B0?fromtitle=%E9%B9%AD%E8%8D%89&fromid=7308794"  target="_blank">狭叶白蝶兰</a></h3>
+                               <a  href="https://baike.baidu.com/item/%E7%8B%AD%E5%8F%B6%E7%99%BD%E8%9D%B6%E5%85%B0?fromtitle=%E9%B9%AD%E8%8D%89&fromid=7308794"  target="_blank" ><i class="fa fa-eye"></i> View</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                  </div>
+
+
+                 <div style="text-align:center;color:#c6b2c8">
+                  <p><br></p>
+                 <a class="btn btn-primary readmore" href="https://www.zhihu.com/search?type=content&q=%E6%A4%8D%E7%89%A9" target="_blank" style="color:#6D8188">
+                 点击查看更多</a>
+                    </div>
+              </div>
+            </div>
+          </div>
+          <!--/.blog-item-->
+          <!--/.blog-item-->
+          <div class="blog-item">
+            <div class="row">
+              <div class="col-sm-2 text-center">
+              </div>
+              <div class="col-sm-11 blog-content">
+                <h2 style="text-align:center;"><a href="blog-item.html" style="color:#6D8188">最危险的植物</a></h2>
+                <h3><i class="fab fa-pagelines" style="color:#9a769d"></i> <a href="https://baike.baidu.com/item/%E8%88%9F%E5%BD%A2%E4%B9%8C%E5%A4%B4" target="_blank" style="color:#9a769d ;"> 舟形乌头</a>是一种细长、竖直且有毒的多年生草本植物，
+                  分布在欧洲北半球温带地区，我国四川地区也有少量分布。舟形乌头含有有毒的乌头生物碱，能够导致窒息。但植物体的各个部分都有毒，根结节处的毒性最强。</br>
+                  <i class="fab fa-pagelines" style="color:#9a769d"></i><a href="https://baike.baidu.com/item/%E6%AF%92%E7%95%AA%E7%9F%B3%E6%A6%B4"  target="_blank" style="color:#9a769d ;"> 毒番石榴</a>树可长至6到15米高，树皮带灰色，
+                  叶片亮绿，果实形似苹果，但一旦误食就会毙命。毒番石榴的白色汁液有剧毒，会令皮肤出现好像得了麻疯一样的病征，燃烧产生的烟还会导致暂时性失明。</br>
+                  <i class="fab fa-pagelines" style="color:#9a769d"></i><a href="https://baike.baidu.com/item/%E6%B0%B4%E6%AF%92%E8%8A%B9/10951470?fr=aladdin"  target="_blank" style="color:#9a769d ;"> 水毒芹</a>是一种有毒的多年生草本植物，靠近水边生长，多见于加拿大南部至墨西哥湾。
+                  水毒芹的根为白色，有时人们会因此而错把它当成欧洲防风草，但水毒芹含有毒芹素，根部剧毒，这种毒素能够破坏中枢神经，导致误食者癫痫发作(症状包括丧失意识以及肌肉剧烈收缩)并最终死亡。
+
+                </h3>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-4 ">
+                              <h3><a href="https://baike.baidu.com/item/%E8%88%9F%E5%BD%A2%E4%B9%8C%E5%A4%B4" target="_blank"  style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 舟形乌头</a> </h3>
+                        <div class="recent-work-wrap">
+                          <img class="img-responsive" src="static/img/wutou.jpg" alt="">
+                          <div class="overlay">
+                            <div class="recent-work-inner">
+                              <h3><a href="https://baike.baidu.com/item/%E8%88%9F%E5%BD%A2%E4%B9%8C%E5%A4%B4" target="_blank">舟形乌头</a> </h3>
+                            <a  href="https://baike.baidu.com/item/%E8%88%9F%E5%BD%A2%E4%B9%8C%E5%A4%B4" target="_blank" ><i class="fa fa-eye"></i> View</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-4 ">
+                          <h3><a href="https://baike.baidu.com/item/%E6%AF%92%E7%95%AA%E7%9F%B3%E6%A6%B4"  target="_blank"  style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 毒番石榴</a></h3>
+                        <div class="recent-work-wrap">
+                          <img class="img-responsive" src="static/img/du.jpg" alt="">
+                          <div class="overlay">
+                            <div class="recent-work-inner">
+                              <h3><a href="https://baike.baidu.com/item/%E6%AF%92%E7%95%AA%E7%9F%B3%E6%A6%B4"  target="_blank">毒番石榴</a></h3>
+                                    <a  href="https://baike.baidu.com/item/%E6%AF%92%E7%95%AA%E7%9F%B3%E6%A6%B4"  target="_blank" ><i class="fa fa-eye"></i> View</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-4 ">
+                          <h3><a href="https://baike.baidu.com/item/%E6%B0%B4%E6%AF%92%E8%8A%B9/10951470?fr=aladdin"  target="_blank"  style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 水毒芹</a></h3>
+                        <div class="recent-work-wrap">
+                          <img class="img-responsive" src="static/img/duqin.jpg" alt="">
+                          <div class="overlay">
+                            <div class="recent-work-inner">
+                              <h3><a href="https://baike.baidu.com/item/%E6%B0%B4%E6%AF%92%E8%8A%B9/10951470?fr=aladdin"  target="_blank">水毒芹</a></h3>
+                               <a  href="https://baike.baidu.com/item/%E6%B0%B4%E6%AF%92%E8%8A%B9/10951470?fr=aladdin"  target="_blank" ><i class="fa fa-eye"></i> View</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                  </div>
+
+
+                 <div style="text-align:center;color:#c6b2c8">
+                  <p><br></p>
+                 <a class="btn btn-primary readmore" href="http://www.kepuchina.cn/qykj/swjs/201711/t20171123_284167.shtml" target="_blank" style="color:#6D8188">
+                 点击查看更多 </a>
+                    </div>
+              </div>
+            </div>
+          </div>
+          <!--/.blog-item-->
+
+
+        </div>
+        <!--/.col-md-8-->
+
+        <aside class="col-md-4">
+          <div class="widget search">
+            <form role="form">
+              <input type="text" class="form-control search_box" autocomplete="off" placeholder="搜索内容">
+            </form>
+          </div>
+          <!--/.search-->
+
+
+
+          <div class="widget blog_gallery">
+            <h3 style="color:#6D8188">多肉之色</h3>
+
+              <div class="col-xs-12 col-sm-6 "  style="padding: 10px">
+                  <h3><a href="https://baike.baidu.com/item/%E8%8B%AF%E5%B7%B4%E8%92%82%E6%96%AF"  target="_blank"  style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 苯巴蒂斯</a></h3>
+                <div class="recent-work-wrap">
+                  <img class="img-responsive" src="static/img/benba.jpg" alt="">
+                  <div class="overlay">
+                    <div class="recent-work-inner">
+                      <h3><a href="https://baike.baidu.com/item/%E8%8B%AF%E5%B7%B4%E8%92%82%E6%96%AF"  target="_blank">苯巴蒂斯</a></h3>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 " style="padding: 10px">
+                  <h3><a href="https://baike.baidu.com/item/%E6%99%9A%E9%9C%9E/22105132"  target="_blank" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 晚霞</a></h3>
+                <div class="recent-work-wrap">
+                  <img class="img-responsive" src="static/img/wanxia.jpg" alt="">
+                  <div class="overlay">
+                    <div class="recent-work-inner">
+                      <h3><a href="https://baike.baidu.com/item/%E6%99%9A%E9%9C%9E/22105132"  target="_blank">晚霞</a></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 "  style="padding: 10px">
+                  <h3><a href="https://baike.baidu.com/item/%E4%B9%8C%E6%9C%A8/17157813"  target="_blank" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 乌木</a></h3>
+                <div class="recent-work-wrap">
+                  <img class="img-responsive" src="static/img/wumu2.jpg" alt="">
+                  <div class="overlay">
+                    <div class="recent-work-inner">
+                      <h3><a href="https://baike.baidu.com/item/%E4%B9%8C%E6%9C%A8/17157813"  target="_blank">乌木</a></h3>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 "  style="padding: 10px">
+                <h3><a href="https://baike.baidu.com/item/%E5%A2%A8%E8%A5%BF%E5%93%A5%E5%B7%A8%E4%BA%BA"  target="_blank" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 墨西哥巨人</a></h3>
+              <div class="recent-work-wrap">
+                <img class="img-responsive" src="static/img/juren.jpg" alt="">
+                <div class="overlay">
+                  <div class="recent-work-inner">
+                    <h3><a href="https://baike.baidu.com/item/%E5%A2%A8%E8%A5%BF%E5%93%A5%E5%B7%A8%E4%BA%BA"  target="_blank">墨西哥巨人</a></h3>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 "  style="padding: 10px">
+            <h3><a href="https://baike.baidu.com/item/%E7%BA%A2%E8%9C%A1%E4%B8%9C%E4%BA%91"  target="_blank" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 红冬云</a></h3>
+            <div class="recent-work-wrap">
+              <img class="img-responsive" src="static/img/dongyun.jpg" alt="">
+              <div class="overlay">
+                <div class="recent-work-inner">
+                  <h3><a href="https://baike.baidu.com/item/%E7%BA%A2%E8%9C%A1%E4%B8%9C%E4%BA%91"  target="_blank">红冬云</a></h3>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 "  style="padding: 10px">
+            <h3><a href="https://baike.baidu.com/item/%E5%90%89%E5%A8%83%E5%A8%83/17699586#viewPageContent"  target="_blank" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 吉娃娃</a></h3>
+          <div class="recent-work-wrap">
+            <img class="img-responsive" src="static/img/jiwawa.jpg" alt="">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="https://baike.baidu.com/item/%E5%90%89%E5%A8%83%E5%A8%83/17699586#viewPageContent"  target="_blank">吉娃娃</a></h3>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 "  style="padding: 10px">
+          <h3><a href="https://baike.baidu.com/item/%E7%B4%AB%E7%BD%97%E5%85%B0%E5%A5%B3%E7%8E%8B"  target="_blank" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 紫罗兰女王</a></h3>
+        <div class="recent-work-wrap">
+          <img class="img-responsive" src="static/img/ziluolan2.jpg" alt="">
+          <div class="overlay">
+            <div class="recent-work-inner">
+              <h3><a href="https://baike.baidu.com/item/%E7%B4%AB%E7%BD%97%E5%85%B0%E5%A5%B3%E7%8E%8B"  target="_blank">紫罗兰女王</a></h3>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 "  style="padding: 10px">
+        <h3><a href="https://baike.baidu.com/item/%E7%9A%AE%E6%B0%8F%E7%9F%B3%E8%8E%B2?fromtitle=%E8%93%9D%E7%9F%B3%E8%8E%B2&fromid=6617821"  target="_blank"  style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 蓝石莲</a></h3>
+      <div class="recent-work-wrap">
+        <img class="img-responsive" src="static/img/lanshilian4.jpg" alt="">
+        <div class="overlay">
+          <div class="recent-work-inner">
+            <h3><a href="https://baike.baidu.com/item/%E7%9A%AE%E6%B0%8F%E7%9F%B3%E8%8E%B2?fromtitle=%E8%93%9D%E7%9F%B3%E8%8E%B2&fromid=6617821"  target="_blank">蓝石莲</a></h3>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="col-xs-12 col-sm-6 "  style="padding: 10px">
+    <h3><a href="https://baike.baidu.com/item/%E9%BB%9B%E6%AF%94/16913244#viewPageContent"  target="_blank" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 黛比</a></h3>
+    <div class="recent-work-wrap">
+      <img class="img-responsive" src="static/img/daibi.jpg" alt="">
+      <div class="overlay">
+        <div class="recent-work-inner">
+          <h3><a href="https://baike.baidu.com/item/%E9%BB%9B%E6%AF%94/16913244#viewPageContent"  target="_blank">黛比</a></h3>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="col-xs-12 col-sm-6 "  style="padding: 10px">
+    <h3><a href="https://baike.baidu.com/item/%E8%8D%89%E7%8E%89%E9%9C%B2"  target="_blank" style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 草玉露</a></h3>
+  <div class="recent-work-wrap">
+    <img class="img-responsive" src="static/img/caoyulu.jpg" alt="">
+    <div class="overlay">
+      <div class="recent-work-inner">
+        <h3><a href="https://baike.baidu.com/item/%E8%8D%89%E7%8E%89%E9%9C%B2"  target="_blank">草玉露</a></h3>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-xs-12 col-sm-6 "  style="padding: 10px">
+    <h3><a href="https://www.drlmeng.com/fiona.html"  target="_blank"  style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 菲欧娜</a></h3>
+  <div class="recent-work-wrap">
+    <img class="img-responsive" src="static/img/feiouna.jpg" alt="">
+    <div class="overlay">
+      <div class="recent-work-inner">
+        <h3><a href="https://www.drlmeng.com/fiona.html"  target="_blank">菲欧娜</a></h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-12 col-sm-6 "  style="padding: 10px">
+    <h3><a href="https://baike.baidu.com/item/%E9%9B%A8%E7%87%95%E5%BA%A7"  target="_blank"  style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 雨燕座</a></h3>
+  <div class="recent-work-wrap">
+    <img class="img-responsive" src="static/img/yuyanzuo.jpg" alt="">
+    <div class="overlay">
+      <div class="recent-work-inner">
+        <h3><a href="https://baike.baidu.com/item/%E9%9B%A8%E7%87%95%E5%BA%A7"  target="_blank">雨燕座</a></h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-12 col-sm-6 "  style="padding: 10px">
+  <h3><a href="https://baike.baidu.com/item/%E5%B1%B1%E5%9C%B0%E7%8E%AB%E7%91%B0/9332069"  target="_blank"   style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 山地玫瑰</a></h3>
+  <div class="recent-work-wrap">
+    <img class="img-responsive" src="static/img/shandimeigui.jpg" alt="">
+    <div class="overlay">
+      <div class="recent-work-inner">
+        <h3><a href="https://baike.baidu.com/item/%E5%B1%B1%E5%9C%B0%E7%8E%AB%E7%91%B0/9332069"  target="_blank">山地玫瑰</a></h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-12 col-sm-6 "  style="padding: 10px">
+      <h3><a href="https://baike.baidu.com/item/%E7%86%8A%E7%AB%A5%E5%AD%90"  target="_blank"  style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 熊童子</a></h3>
+  <div class="recent-work-wrap">
+    <img class="img-responsive" src="static/img/xiongtongzi.jpg" alt="">
+    <div class="overlay">
+      <div class="recent-work-inner">
+        <h3><a href="https://baike.baidu.com/item/%E7%86%8A%E7%AB%A5%E5%AD%90"  target="_blank">熊童子</a></h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-12 col-sm-6 "  style="padding: 10px">
+    <h3><a href="https://baike.baidu.com/item/%E5%8D%A1%E7%BD%97%E6%8B%89colorata"  target="_blank"  style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 卡罗拉</a></h3>
+  <div class="recent-work-wrap">
+    <img class="img-responsive" src="static/img/kaluola2.jpg" alt="">
+    <div class="overlay">
+      <div class="recent-work-inner">
+        <h3><a href="https://baike.baidu.com/item/%E5%8D%A1%E7%BD%97%E6%8B%89colorata"  target="_blank">卡罗拉</a></h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-12 col-sm-6 "  style="padding: 10px">
+    <h3><a href="https://baike.baidu.com/item/%E8%8A%B1%E6%9C%88%E5%A4%9C/4480629"  target="_blank"   style="color:#9a769d"><i class="fab fa-pagelines" style="color:#9a769d"></i> 花月夜</a></h3>
+  <div class="recent-work-wrap">
+    <img class="img-responsive" src="static/img/huayueye.jpg" alt="">
+    <div class="overlay">
+      <div class="recent-work-inner">
+        <h3><a href="https://baike.baidu.com/item/%E8%8A%B1%E6%9C%88%E5%A4%9C/4480629"  target="_blank">花月夜</a></h3>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+          </div>
+          <!--/.blog_gallery-->
+        </aside>
+      </div>
+      <!--/.row-->
+    </div>
+  </section>
+  <!--/#blog-->
+  <div class="return-top" id="return_top">▲</div>
+  <script>
+
+      var return_top = document.getElementById("return_top");
+      var sTop;
+      window.onscroll = function(){
+          //sTop :滚动条距离顶部的距离数值
+          sTop = document.body.scrollTop||document.documentElement.scrollTop;
+          if(sTop>300){
+              return_top.className = "return-top active";
+          }else{
+              return_top.className = "return-top";
+          }
+      }
+
+      return_top.onclick = function(){
+          var termId = setInterval(function(){
+              sTop-=50;
+              if(sTop<=0){
+
+                  clearInterval(termId);
+              }
+              window.scrollTo(0,sTop);
+
+          },1);
+      }
+  </script>
+
+  <section id="bottom">
+    <div class="container wow fadeInDown" data-wow-duration="800ms" data-wow-delay="500ms">
+      <div class="row">
+          <div class="widget">
+            <h3 style="text-align: center;color:#6D8188">网站介绍和申明</h3>
+              <p style="text-align: center;color:#6D8188">非常感谢您光临我的网站，这是我的个人期末作业~本网站意在为想要购买植物的小伙伴提供一些帮助，
+              包括植物的选购<a href="/index" style="color:#b094b3">（“养棵植物”）</a>和布置技巧<a href="/howtogrow" style="color:#b094b3"></a>。<br>
+              网站中提到的植物都是较为普遍的品种，一般在花店或者花鸟市场就能买到。所有的数据都是由我自己整理的，或许有错误之处，欢迎指出。<br>
+      想看一些特别的植物小专题，例如多肉植物、最稀有的植物、最形象的植物，可以点击<a href="/blog" style="color:#b094b3">“特别专题”</a>。了解一些有趣的植物知识。<br>
+              网站还在不断编写中，植物的种类也会渐渐扩充，再次感谢大家的支持。</p>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!--/#bottom-->
+
+  <div class="top-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="social">
+            <ul class="social-share">
+              <li><a href="#"><i class="fab fa-weixin"></i></a></li>
+              <li><a href="#"><i class="fab fa-weibo"></i></a></li>
+              <li><a href="#"><i class="fas fa-envelope-open"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.container-->
+  </div>
+  <!--/.top-bar-->
+
+  <footer id="footer" class="midnight-blue">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          &copy; Gp Theme. All Rights Reserved.
+          <div class="credits">
+
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--/#footer-->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="static/js/jquery.js"></script>
+  <script src="static/js/bootstrap.min.js"></script>
+  <script src="static/js/jquery.prettyPhoto.js"></script>
+  <script src="static/js/jquery.isotope.min.js"></script>
+  <script src="static/js/wow.min.js"></script>
+  <script src="static/js/main.js"></script>
+
+</body>
+
+</html>
